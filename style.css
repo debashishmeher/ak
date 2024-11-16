@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  height: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: var(--theme-color);
+  border-radius: 1rem;
+  /* border: 2px solid rgb(67, 67, 67); */
+}
+:root {
+    --theme-color: rgb(141, 0, 193);
+    --font-family: "Lato", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+margin-top: 10px;
+  text-decoration: none;
+  color: rgb(38, 38, 38);
+  display: inline-block;
+}
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    background-color: #ffea00;
+  }
+  .sticky{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.452);
+    transition: 0.4s;
+  }
+  .align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo-box {
+    display: flex;
+    gap: 10px;
+    /* background-color: #4634eb; */
+    align-items: center;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  .logo-name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+.logo-span{
+    /* background-color: aqua; */
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+  }
+  .banner{
+    height: 30vh;
+    margin: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("./images/restaurant.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    color: white;
+    border-radius: 5px;
+  }
+  
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  gap: 1rem;
+  padding: 2rem 5%;
+}
+img{
+  width: 100%;
+}
+
+.box {
+  background-color: rgb(49, 49, 49);
+  /* height: 200px; */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  color: white;
+}
+.box:hover{
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.505);
+}
+.box-image{
+  width: 100%;
+}
+.box-info{
+  padding: 1rem 5%;
+}
+
+.box-num {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.box-name{
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.item-list{
+  padding: 2rem 5%;
+}
+.item{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between
+}
+  
